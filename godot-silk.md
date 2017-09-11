@@ -22,7 +22,7 @@ Design Structure:
 3. `add_custom_type`: `SilkLabel extends RichTextLabel`.
     - Custom bbcodes allow for easy linking to other `SilkPassages`, e.g. `[silk text="" link="passage_name"]`, or even better `[text](passage_name)`.
     - Custom bbcodes allow for easy conditional logic and loops, e.g. `[if="condition"]`, `[elif="condition"]`, `[else]`, `[while="condition"]`.
-    - Custom bbcodes allow for simple definition and manipulation of story variables, with SilkEditor-scope, e.g. `[my_var]`, `[my_var="val"]`, `[my_var+="10"]`.
+    - Custom bbcodes allow for simple definition and manipulation of story variables, with SilkEditor-scope, e.g. `[var my_var=null]` (def, defaults to null), `[my_var]` (get), `[my_var="val"]` (set), `[my_var+="10"]` (add).
 3. `add_custom_type`: `SilkPassage extends GraphNode`.
     - Allows the user to enter story content using a `RichTextLabel`.
     - Custom bbcodes for the RichTextLabel should be defined
